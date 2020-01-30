@@ -45,6 +45,10 @@ const onInput = async event => {
       <img src="${imgSrc}" />
       ${movie.Title}
     `;
+    option.addEventListener('click', () => {
+      dropdown.classList.remove('is-active');
+      input.value = movie.Title;
+    })
 
     resultsWrapper.appendChild(option);
   }
@@ -55,6 +59,6 @@ document.addEventListener('click', event => {
   console.log(event.target);
   if(!root.contains(event.target)){
     dropdown.classList.remove('is-active');
-  
+    // document.querySelector('input').value = "";
   }
 })
