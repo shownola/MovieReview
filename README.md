@@ -19,3 +19,12 @@ After completion:
 * Update text
 * If user clicks outside the dropdown, close menu
 Refactor of debouncing the input:
+
+Config for AutoComplete: index.js
+* fetchData() - function to find movies
+* renderOption() - function that knows how to render a movie
+* onOptionSelect() - function that gets invoked when a user clicks an option
+* root - element that the autocomplete should be rendered into
+
+AutoComplete: autocomplete.js
+* Function that will take the autocomplete config and render an autocomplete on the screen.
