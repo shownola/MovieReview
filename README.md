@@ -14,7 +14,8 @@ Search Widget:
 * After input completes make request to api
 * Show a menu of search results which will include an img of the movie
 * If not results - hide the menu
-# After completion
+After completion:
 * Allow user to select from the images to indicate their selection.
 * Update text
-* If user clicks outside the dropdown, close menu 
+* If user clicks outside the dropdown, close menu
+Refactor of debouncing the input:
